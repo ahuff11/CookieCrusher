@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookieCrusher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>CookieCrusher</h1>
+      <p class="site" id="siteLabel">Current site: loading…</p>
+
+      <label class="toggle">
+        <span>Enabled globally</span>
+        <input type="checkbox" id="enabledToggle" />
+      </label>
+
+      <label class="toggle">
+        <span>Disable on this site</span>
+        <input type="checkbox" id="siteToggle" />
+      </label>
+
+      <label class="toggle">
+        <span>Debug logging</span>
+        <input type="checkbox" id="debugToggle" />
+      </label>
+
+      <button id="runNowButton" type="button">Run now</button>
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

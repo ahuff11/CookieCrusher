@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CookieCrusher",
+  "description": "Automatically declines cookie consent banners where possible.",
+  "version": "1.0.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "CookieCrusher",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

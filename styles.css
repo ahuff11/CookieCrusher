@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.popup {
+  min-width: 300px;
+  padding: 14px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.site {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  background: #f5f5f5;
+}
+
+.status {
+  min-height: 18px;
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #444;
+}
+
+.status.error {
+  color: #b00020;
+}
